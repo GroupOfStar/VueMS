@@ -40,7 +40,7 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
     
     if(!to.matched.some(record => record.meta.requireAuth)){
-        if(localStorage.getItem('loginInfo') == undefined){
+        if(localStorage.getItem('userInfo') == undefined){
             next({
                 path: '/login',
                 query: { redirect: to.fullPath } //to.fullPath = /login
