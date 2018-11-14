@@ -39,8 +39,8 @@ app.use(function(err, req, res, next) {
 });
 
 // 监听端口
-app.listen(888, () => {
-  console.log('888端口服务器启动')
+app.listen(8888, () => {
+  console.log('8888端口服务器启动')
 })
 
 // module.exports = app;
